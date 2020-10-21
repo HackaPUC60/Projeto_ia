@@ -10,7 +10,7 @@ class Extrator_Altura:
         pass
 
     @staticmethod
-    def verificar_altura_MAO(pontos):
+    def verificar_altura_mao(pontos):
         punho_V = 0
         ponta_polegar_V = 0
         ponta_indicador_V = 0
