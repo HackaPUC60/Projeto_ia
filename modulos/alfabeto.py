@@ -2,6 +2,10 @@
 @Author Willian Antunes
 HackaPuc60
 21/10/2020
+
+não foram usadas as letras: H, J, K, X, ,Y , Z
+devido ao movimento adicional para a execução correta das letras.
+Estas letras podem ser analisadas em uma função diferente, com transicao entre os movimentos
 """
 
 
@@ -73,11 +77,3 @@ class Alfabeto:
 
         self.letras = [self.A, self.B, self.C, self.D, self.E, self.F, self.G, self.I, self.L, self.M, self.N, self.O,
                        self.P, self.Q, self.R, self.S, self.T, self.U, self.V, self.W]
-
-# não foram usadas as letras: H, J, K, X, ,Y , Z
-# devido ao movimento adicional para a execução correta das letras.
-# Estas letras podem ser analisadas em uma função diferente, semelhante a função de
-# análise de posicionamento do corpo, onde comparamos a transição entre pontos
-
-# Letra T: para o dedo polegar, devido a estar sobreposto pelo dedo indicador, o algoritmo não reconhece os pontos da ponta do dedo
-# Letra N e U se confundem
