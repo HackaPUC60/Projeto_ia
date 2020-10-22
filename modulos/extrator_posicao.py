@@ -29,6 +29,7 @@ class Extrator_Posicao:
                 pontaDedo_V = p[1]
                 pontaDedo_H = p[0]
 
+
         if mao == 'acima':  # se a posição da mão está voltada para cima
             if dedo == 'polegar':  # o dedo polegar se move mais na horizontal do que na vertical
                 if pontaDedo_H <= pontoAnterior_H:  # se a ponta do dedo polegar na horizontal for menor que o ponto anterior dele, então está dobrado
@@ -64,12 +65,14 @@ class Extrator_Posicao:
             else:  # senão está dobrado
                 return self.posicoes.append('dobrado')
 
-    @staticmethod
-    def verificar_posicao_corpo(pontos):
+
+    # //////////////////////////////////FUNÇÕES PARA ANÁLISE DE POSIÇÃO DO CORPO///////////////////////////////////////////
+    def verificar_posicao_CORPO(pontos):
         posicao1 = 0
         posicao2 = 0
 
         for indx, p in enumerate(pontos):
+            # print(indx, p[0])
             if indx == 0:
                 posicao1 = p[0] + p[1]
                 print('posicao1', posicao1)
@@ -78,6 +81,13 @@ class Extrator_Posicao:
                 print('posicao2', posicao2)
 
         if (posicao2 - posicao1) >= 0:
+            # print('(p3 - p2) = ',(p3 - p2), 'R1')
+            # print('(p2 - p1) = ',(p2 - p1), 'R2')
+            # print('(p1 - p0) = ',(p1 - p0), 'R3')
             return 'esticado'
+
         else:
+            # print('(p3 - p2) = ',(p3 - p2), 'R1')
+            # print('(p2 - p1) = ',(p2 - p1), 'R2')
+            # print('(p1 - p0) = ',(p1 - p0), 'R3')
             return 'dobrado'
