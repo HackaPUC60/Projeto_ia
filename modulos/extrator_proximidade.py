@@ -9,14 +9,14 @@ se forem iguais, então significa que estão próximos
 Para cada variável de pontos chave da mão, não foram utilizados os nomes ciêntificos de cada articulação
 ver imagem: nome das articulações
 """
-
+import modulos.extrator_posicao
 
 class Extrator_Proximidade:
     def __init__(self):
         pass
 
     @staticmethod
-    def verificar_proximidade_dedos(pontos, posicoes):
+    def verificar_proximidade_dedos(pontos):
         polegar_ = ''
         indicador_ = ''
         medio_ = ''
@@ -46,7 +46,7 @@ class Extrator_Proximidade:
 
         # se o dedo polegar e indicador estiverem acima ou abaixo, faz a comparação de proximidade entre eles
         # se estiverem em alturas diferentes, significa que estão afastados
-        for i, d in enumerate(posicoes):
+        for i, d in enumerate(modulos.extrator_posicao.posicoes):
             # print(i, d)
             if i == 0:
                 polegar_ = d
