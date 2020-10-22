@@ -13,8 +13,9 @@ Me de um sinal é uma plataforma de aprendizado em libras inteligente.
 Prototipo Inicial:
   - O prototipo inicial tem como base traduzir primeiramente letras do alfabeto, sendo altamente confiavél
   - Treinanda com a  arquitetura VGGNet para pegar os pontos chaves das mãos, podendo inferir pontos de conexões entre os dedos.
+  - Todo processamento e feito em tempo real, atraves de videostream
   - Após detectar os pontos chaves das mãos e feita analíse dos movimentos, e previsão dos sinais. 
   - A Api de texto, será consumida via Mobile, e Web
-  - 
-Exemplo:
-    [![Build Status](https://i.imgur.com/Z2jqdav.png)](https://travis-ci.org/joemccann/dillinger)
+ 
+# Exemplo:
+[![Build Status](https://i.imgur.com/Z2jqdav.png)](https://travis-ci.org/joemccann/dillinger)
